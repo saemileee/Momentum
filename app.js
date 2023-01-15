@@ -116,9 +116,25 @@ const msg = {
         console.log("어서오세요, " + userName + "님! " + count + "번째 방문이네요.");
     },
     bye: function (userName){
-        alert("안녕히가세요. " + userName + "님 다음에 또 오세요.");
+        console.log("안녕히가세요. " + userName + "님 다음에 또 오세요.");
     }
 };
 
 msg.welcome("새미", "두");
 msg.bye("성환");
+
+// function 복습
+
+const luck = {
+    우정: function(today, content){
+        console.log(today + " 오늘의 우정 운세는 " + content);
+    },
+    애정: function(today, content){
+        console.log(today + " 오늘의 애정 운은 " + content);
+    },
+    일상: function(today, content){
+        console.log(today + " 오늘의 일상 운세는 " + content);
+    },
+};
+
+luck.애정 ("23년 1월 15일", "아주 좋습니다.");
