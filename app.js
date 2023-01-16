@@ -138,3 +138,56 @@ const luck = {
 };
 
 luck.애정 ("23년 1월 15일", "아주 좋습니다.");
+
+//sayHello '누군가'에게 인사하는 맞춤형 결과를 받을 수 잇는 방법
+function sayHello(name){
+	console.log("hello " + name);
+};//{콘솔을 실행한다. 기록한다. hello 라는 텍스트를, 변수 name의 값을;
+
+sayHello("saemi");// sayHello를 실행한다. 텍스트 saemi를 name 자리에 넣는다. >> hello saemi
+sayHello("샘","새미","바보");
+
+// hello 샘 // 이 function은 오직 첫번째 argument만 받는다.
+
+
+// 계산기 코드 만들기 숙제
+const func1 = {
+	plus1: function (a,b) {
+	    console.log(a + b); //이건 콘솔에 단순히 a+b 값을 기록한 것일 뿐 실제 plus 기능이 a+b라는 것을 의미하지 않음
+	},
+	plus2: function (a,b) {
+		return a+b;//이것은 minus기능에 a+b 값을 반환하라는 이야기임
+        console.log("hello"); //
+	}
+    // plus3: function (a,b){
+    //     a + b
+    // }
+};
+
+const ex1 = func1.plus1(1,1); //console.log(1 + 1);
+const ex2 = func1.plus2(1,1);
+
+
+console.log(ex1);
+
+console.log(func1.plus1(1,1)); //156번째 코드 실행 :2 167번째 코드 실행 :undefined
+console.log(func1.plus2(1,1)); // 168번째 코드 실행 :2
+
+
+// console.log(3rdResult);
+
+// const func1 = {
+// 	plus1: function (a,b) {
+// 	return a+b;
+// 	console.log("리턴");
+// 	}, // a+b값을 반환한 후 console.log("hello")는 작동하지 않음
+// 	plus2: function (a,b) {
+// 	console.log("리턴");
+// 	return a+b; //이 때는 리턴 기능이 작동하기 전 hello는 뜸
+//     }
+// };
+
+// func1.plus1();
+// func1.plus2();
+
+// plus2Result = func1.plus2 (1+1);
