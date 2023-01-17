@@ -164,8 +164,8 @@ const func1 = {
     // }
 };
 
-const ex1 = func1.plus1(1,1); //console.log(1 + 1);
-const ex2 = func1.plus2(1,1);
+const ex1 = func1.plus1(1,1); //console.log(1 + 1) >>2;
+const ex2 = func1.plus2(1,1); //return 1+1 >> 2
 
 
 console.log(ex1);

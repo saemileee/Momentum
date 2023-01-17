@@ -47,6 +47,8 @@ if(isNaN(age) || age < 0){
     console.log("You can drink.");
 } else if(age>50 && age < 80){
     console.log("You would better less drink.");
+} else if(age===100);{
+    console.log("Wow, you are wise.") //다음 80이상 조건에서 true지만 위에서 아래의 순서로 내려오기 때문에 여기서 먼저 걸리면 해당 값이 출력
 } else if(age >= 80){
     console.log("You can do whatever you want.")
 }
