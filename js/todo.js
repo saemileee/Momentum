@@ -4,20 +4,24 @@ const toDoList = document.querySelector("#todo-list");
 
 const TODOS_KEY = "todos"
 
-const toDos = [];
+let toDos = [];
 
 function saveToDos(){
-    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos))}
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos))
+}
 
 function deleteToDo(event){
-    const li = event.target.parentElement.innerText;
+    const li = event.target.parentElement;
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
 
 function paintToDo(newToDo){
     const li = document.createElement("li");
+    li.id = newToDo.id;
     const span = document.createElement("span");
-    span.innerText = newToDo;
+    span.innerText = newToDo.text;
     const button = document.createElement("button");
     button.innerText = "❎";
     button.addEventListener("click", deleteToDo);
@@ -29,9 +33,13 @@ function paintToDo(newToDo){
 function handleToDoSubmit (event){
     event.preventDefault();
     const newToDo = toDoInput.value;
-    toDoInput.value=""; //이 시점에 toDoInput value가 비어있더라도 newToDo도 비어있다고 말할 수 없음
-    toDos.push(newToDo);
-    paintToDo(newToDo);
+    toDoInput.value = ""; //이 시점에 toDoInput value가 비어있더라도 newToDo도 비어있다고 말할 수 없음
+    const newToDoObj = {
+        text:newToDo,
+        id: Date.now(),
+    }
+    toDos.push(newToDoObj);
+    paintToDo(newToDoObj);
     saveToDos();
 };
 
@@ -39,8 +47,9 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
-console.log(savedToDos);
+
 if(savedToDos !== null){
     const parsedToDos = JSON.parse(savedToDos);
-    parsedToDos.forEach((item) => console.log("this is the turn of ", item));
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
 }
