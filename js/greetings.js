@@ -30,7 +30,7 @@ function onLogoutSubmit(){
 logoutForm.addEventListener("submit", onLogoutSubmit);
 
 function paintGreetings(typedUserName){
-    greeting.innerText = `Hello ${typedUserName}`; //"Hello " + userName;
+    greeting.innerText = `${typedUserName}, 오늘도 좋은 하루 보내세요!`; //"Hello " + userName;
     greeting.classList.remove(HIDDEN_CLASSNAME); // show the greetings
 }
 

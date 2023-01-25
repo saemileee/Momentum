@@ -8,37 +8,63 @@
     <title>Momentum App</title>
 </head>
 <body>
-    <form class="hidden" id="login-form">
-        <input
-            required
-            maxlength="15" 
-            type="text" 
-            placeholder="What is your name?">
-        <input type="submit" value="Log In">
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form class="hidden" id="logout-form">
-        <input type="submit" value="Log out">
-    </form>
-    <h2 id="clock">00:00</h2>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <form id="todo-form">
-        <input required type="text" placeholder="Write a To Do and Press Enter">
-        <input type="submit" value ="완료">
-    </form>
-    <ul id="todo-list">
-    </ul>
-    <div id="weather">
-        <span></span>
-        <span></span>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <div id="wrap">
+        <div id="content_container">
+            <p class="logo">MOMENTUM</p>
+            <form class="hidden" id="login-form">
+                <input
+                    required
+                    maxlength="15" 
+                    type="text" 
+                    placeholder="What is your name?">
+                <input type="submit" value="Log In">
+            </form>
+            <h1 id="welcome">good morning,</h1>
+            <h1 id="greeting" class="hidden"></h1>
+            <form class="hidden" id="logout-form">
+                <input type="submit" value="Log out">
+            </form>
+            <h2 id="date"></h2>
+            <h2 id="clock">00:00</h2>
+            <div id="weather">
+                <p>♥ Today’s Weather</p>
+                <div>
+                    <span class="weather"></span>
+                    <span class="city"></span>
+                </div>
+            </div>
+            <div id="quote">
+                <p>♥ Today’s quote</p>
+                <div class="container">
+                    <div class="quote_container">
+                        <span class="quote"></span><br>
+                        <span class="author"></span>
+                    </div>
+                </div>
+            </div>
+            <span id="todo_title">
+                <span>plan for today</span>
+                <span>Todos</span>
+            </span>
+            <div id="todo_container">
+                <div class="todo_group">
+                    <form id="todo-form">
+                        <input required type="text" placeholder="Write a To Do and Press Enter">
+                        <input type="submit" value ="완료">
+                    </form>
+                    <uls id="todo-list">
+                    </uls>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
+    <!-- <script src="js/background.js"></script> -->
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
 </body>
