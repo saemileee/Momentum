@@ -1,8 +1,8 @@
 const toDoForm = document.querySelector("#todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
-
 const TODOS_KEY = "todos"
+
 
 let toDos = [];
 
@@ -17,16 +17,33 @@ function deleteToDo(event){
     saveToDos();
 }
 
+function doneToDo (){
+    const li = event.target.parentElement;
+    const liSpan = li.querySelector("span");
+    const doneButton = li.querySelector("button");
+    if (doneButton.innerText === "♡"){
+        doneButton.innerText = "♥"
+        liSpan.style.textDecoration="line-through";
+    } else{
+        doneButton.innerText = "♡"
+        liSpan.style.textDecoration="none";
+    }
+}
+
 function paintToDo(newToDo){
     const li = document.createElement("li");
     li.id = newToDo.id;
+    const doneButton = document.createElement("button");
+    doneButton.innerText = "♡";
+    doneButton.addEventListener("click", doneToDo) ;
     const span = document.createElement("span");
     span.innerText = newToDo.text;
-    const button = document.createElement("button");
-    button.innerText = "X";
-    button.addEventListener("click", deleteToDo);
+    const deleteButton = document.createElement("button");
+    deleteButton.innerText = "X";
+    deleteButton.addEventListener("click", deleteToDo);
+    li.appendChild(doneButton);
     li.appendChild(span);
-    li.appendChild(button);
+    li.appendChild(deleteButton);
     toDoList.appendChild(li);
 }
 

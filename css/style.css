@@ -4,7 +4,8 @@
     display: none;
 }
 
-body, h1, h2, p {
+body, h1, h2, p, li {
+    text-align: unset;
     display: block;
     font-size: 0;
     margin-block-start:0;
@@ -473,8 +474,16 @@ color: #44494D;
 }
 
 
+#todo-list li button:first-child{
+    float: left;
+    margin: 4px;
+    padding: 0 10px;
+    background: none;
+    color: #FFFFFF;
+    border: none;
+}
 
-#todo-list li button{
+#todo-list li button:last-child{
     float: right;
     margin: 4px;
     padding: 0 10px;
