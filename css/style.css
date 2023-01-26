@@ -214,6 +214,51 @@ color: #44494C;
     color: #44494D;
 }
 
+#weather .humid{
+    position: absolute;
+width: 41px;
+height: 27px;
+left: 337px;
+top: 61px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+
+color: #44494D;
+}
+
+#weather .wind{
+    position: absolute;
+left: 337px;
+top: 91px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+
+color: #44494D;
+}
+
+#weather .error{
+position: absolute;
+width: 512px;
+top: 74px;
+text-align: center;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+
+color: #44494D;
+}
+
+
 /* 명언 */
 #quote {}
 #quote p {
