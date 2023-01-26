@@ -81,4 +81,4 @@ if(savedToDos !== null){
     parsedToDos.forEach(paintToDo);
 }
 
-console.log(parsedToDos);
+const allToDosCount = parsedToDos.length;

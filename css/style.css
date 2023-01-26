@@ -31,7 +31,9 @@ body {
     position: relative;
     width: 1440px;
     height: 1024px;
-    background: #E4EAEC;
+    background: #E4EAEC url(../img/background.png );
+    background-position: 670px 24px;
+    background-repeat: no-repeat;
 }
 
 /* LOGO */
@@ -64,7 +66,9 @@ body {
     top: 29px;
 }
 
-#logout-form .input{
+#logout-form input[type=submit]{
+
+    background: none;
     border: none;
     font-family: 'Unbounded';
     font-style: normal;
@@ -117,7 +121,7 @@ color: #44494C;
 
     font-family: 'Noto Sans';
     font-style: normal;
-    font-weight: 100;
+    font-weight: 350;
     font-size: 36px;
     line-height: 49px;
     /* identical to box height */
@@ -182,6 +186,33 @@ color: #44494C;
     background: url("../img/bg_container.png");
 }
 
+#weather .icon_weather {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 42px;
+    top: 58px;
+    z-index: 0;
+}
+
+#weather .icon {
+    display: none;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 300px;
+}
+
+#weather .icon_humid{
+    top: 56px;    
+    background: url("../img/icon_humid.png");
+}
+
+#weather .icon_windspeed{
+    top: 92px;    
+    background: url("../img/icon_windspeed.png");
+}
+
 #weather .city{
     position: absolute;
     display: block;
@@ -220,21 +251,19 @@ color: #44494C;
 width: 41px;
 height: 27px;
 left: 337px;
-top: 61px;
-
+top: 57px;
 font-family: 'Noto Sans';
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 27px;
-
 color: #44494D;
 }
 
 #weather .wind{
     position: absolute;
 left: 337px;
-top: 91px;
+top: 93px;
 
 font-family: 'Noto Sans';
 font-style: normal;
@@ -295,22 +324,19 @@ color: #44494D;
     text-align: center;
     position: relative;
     margin: 65px 0px auto;
-    width: 464px;
+    width: 512px;
     height: 96px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #44494D;
 }
 
 #quote .quote{
-    display: inline;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    color: #44494D;
-    
+    display: inline;    
     /* Inside auto layout */
-    
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -318,19 +344,7 @@ color: #44494D;
 
 #quote .author{
     display: inline;
-    width: 58px;
     height: 22px;
-    
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 14px;
-    line-height: 22px;
-    /* identical to box height */
-    
-    text-align: center;
-    color: #44494D;
-    
     /* Inside auto layout */
     flex: none;
     order: 1;
@@ -424,16 +438,53 @@ color: #44494D;
 }
 
 #todo-form {
-    width: 434px;
+    width: inherit;
     height: 35px;
-    
-    
     /* Inside auto layout */
     
     flex: none;
     order: 0;
     flex-grow: 0;
 }
+
+#todo-form input[type=text]{
+    width: 370px;
+    height: 35px;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #FFFFFF;
+    border-image: none;
+    color: #E4EAEC;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+#todo-form input[type=submit]{
+    display: inline-block;
+    margin-left: 9px;
+    border: solid 1px;
+    border-radius: 2px;
+    background: none;
+    color: #E4EAEC;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#todo-form input[value]{
+    
+}
+
 
 #todo-list{
     display: flex;
@@ -490,4 +541,12 @@ color: #44494D;
     background: none;
     color: #FFFFFF;
     border: none;
+}
+
+#todo-nothing {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
 }

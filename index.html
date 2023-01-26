@@ -25,18 +25,21 @@
             <h1 id="welcome">good morning,</h1>
             <h1 id="greeting" class="hidden"></h1>
             <form class="hidden" id="logout-form">
-                <input type="submit" value="Log out">
+                <input type="submit" value="log-out >">
             </form>
             <h2 id="date"></h2>
             <h2 id="clock">00:00</h2>
             <div id="weather">
                 <p>♥ Today’s Weather</p>
                 <div>
+                    <a class="icon_weather"></a>
                     <span class="weather"></span>
                     <span class="city"></span>
+                    <a class="icon icon_humid"></a>
                     <span class="humid"></span>
+                    <a class="icon icon_windspeed"></a>
                     <span class="wind"></span>
-                    <span class="error"></span>
+                    <span class="error">날씨 탐색 중</span>
                 </div>
             </div>
             <div id="quote">
@@ -58,18 +61,19 @@
                         <input required type="text" placeholder="Write a To Do and Press Enter">
                         <input type="submit" value ="추가">
                     </form>
-                    <uls id="todo-list">
-                    </uls>
+                    <ul id="todo-list"></ul>
+                    <span id="todo-nothing">오늘 해야할 일을 추가해 보세요.</span>
+                    <span id="todo-saying"></span>
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/weather.js"></script>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <!-- <script src="js/background.js"></script> -->
-    <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
+    <script src="js/todo2.js"></script>
     <script src="js/welcome.js"></script>
 </body>
 </html>
