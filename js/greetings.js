@@ -6,6 +6,14 @@ const logoutForm = document.querySelector("#logout-form");
 const HIDDEN_CLASSNAME = "hidden"
 const USERNAME_KEY = "userName" // string이 여러개 사용될 경우 오타 오류를 잡아내기 위해 변수지정
 
+const greetingText = [
+    "행복이 가득한 하루 보내세요!",
+    "알찬 하루 보내세요 >__<",
+    "귀여운 하루 보내세요!!!",
+]
+const randomGreetingText = greetingText[Math.floor(Math.random() * greetingText.length)]
+
+
 function onLoginSubmit(event){
     event.preventDefault();
     if (loginInput.value !==""){
@@ -30,7 +38,7 @@ function onLogoutSubmit(){
 logoutForm.addEventListener("submit", onLogoutSubmit);
 
 function paintGreetings(typedUserName){
-    greeting.innerText = `${typedUserName}, 오늘도 좋은 하루 보내세요!`; //"Hello " + userName;
+    greeting.innerText = `${typedUserName}, ${randomGreetingText}`; //"Hello " + userName;
     greeting.classList.remove(HIDDEN_CLASSNAME); // show the greetings
 }
 
