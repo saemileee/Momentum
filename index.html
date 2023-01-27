@@ -13,59 +13,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         <div id="wrap">
         <div id="content_container">
-            <p class="logo">MOMENTUM</p>
-            <form class="hidden" id="login-form">
-                <input
-                    required
-                    maxlength="15" 
-                    type="text" 
-                    placeholder="What is your name?">
-                <input type="submit" value="Log In">
-            </form>
-            <h1 id="welcome">good morning,</h1>
-            <h1 id="greeting" class="hidden"></h1>
-            <form class="hidden" id="logout-form">
-                <input type="submit" value="log-out >">
-            </form>
-            <h2 id="date"></h2>
-            <h2 id="clock">00:00</h2>
-            <div id="weather">
-                <p>♥ Today’s Weather</p>
-                <div>
-                    <a class="icon_weather"></a>
-                    <span class="weather"></span>
-                    <span class="city"></span>
-                    <a class="icon icon_humid"></a>
-                    <span class="humid"></span>
-                    <a class="icon icon_windspeed"></a>
-                    <span class="wind"></span>
-                    <span class="error">날씨 탐색 중</span>
-                </div>
+            <div id = "header-container">
+                <a href="#" class="logo">MOMENTUM</a>
+            <div id="login-form-container">
+                <form id="login-form" class="hidden">
+                    <input
+                        required
+                        maxlength="15" 
+                        type="text" 
+                        placeholder="What is your name?">
+                    <input type="submit" value="Log In">
+                </form>
+                <div></div>
             </div>
-            <div id="quote">
-                <p>♥ Today’s quote</p>
-                <div class="container">
-                    <div class="quote_container">
-                        <span class="quote"></span><br>
-                        <span class="author"></span>
+            <form id="logout-form" class="hidden">
+                    <input type="submit" value="log-out >">
+            </form>
+            <div id="left-container">
+                <h1 id="welcome">good morning,</h1>
+                <h1 id="greeting" class="hidden"></h1>
+                <span class="heart">♥</span>
+                <h2 id="date"></h2>
+                <h2 id="clock">00:00</h2>
+                <div id="weather">
+                    <span class="heart">♥</span>
+                    <p>Today’s Weather</p>
+                    <div>
+                        <a class="icon_weather"></a>
+                        <span class="weather"></span>
+                        <span class="city"></span>
+                        <a class="icon icon_humid"></a>
+                        <span class="humid"></span>
+                        <a class="icon icon_windspeed"></a>
+                        <span class="wind"></span>
+                        <span class="error">· · · 날씨 탐색 중 · · ·</span>
+                    </div>
+                </div>
+                <div id="quote">
+                    <span class="heart">♥</span>
+                    <p>Today’s quote</p>
+                    <div class="container">
+                        <div class="quote_container">
+                            <span class="quote"></span><br>
+                            <span class="author"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <span id="todo_title">
-                <span>plan for today</span>
-                <span>Todos</span>
-            </span>
-            <div id="todo_container">
-                <div class="todo_group">
+            <div id="right-container">
+                <span id="todo_title">
+                    <span>plan for today</span>
+                    <span>Todos</span>
+                </span>
+                <div id="todo_container">
                     <form id="todo-form">
                         <input required type="text" placeholder="Write a To Do and Press Enter">
                         <input type="submit" value ="추가">
                     </form>
                     <ul id="todo-list"></ul>
-                    <span id="todo-nothing">오늘 해야할 일을 추가해 보세요.</span>
                     <span id="todo-saying"></span>
                 </div>
             </div>
+            <img src="img/me.png" class="illust">
         </div>
     </div>
     <script src="js/weather.js"></script>

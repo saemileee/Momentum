@@ -2,7 +2,6 @@ const toDoForm = document.querySelector("#todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
 const TODOS_KEY = "todos"
-const nothing = document.querySelector("#todo-nothing")
 const toDoSaying = document.querySelector("#todo-saying");
 const toDoSayingText = {
     기본: "열심히 달려보자", //doneToDo가 80%미만 완료 되었을 때
@@ -14,7 +13,6 @@ const toDoSayingText = {
 //전체 li 개수 대비 li.innerText = "♥" 채워져 있는 갯수
 
 let toDos = [];
-
 
 function saveToDos(){
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos))
@@ -80,5 +78,3 @@ if(savedToDos !== null){
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
-
-const allToDosCount = parsedToDos.length;

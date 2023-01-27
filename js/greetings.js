@@ -16,26 +16,17 @@ const randomGreetingText = greetingText[Math.floor(Math.random() * greetingText.
 
 function onLoginSubmit(event){
     event.preventDefault();
-    if (loginInput.value !==""){
-        const typedUserName = loginInput.value;
-        loginForm.classList.add(HIDDEN_CLASSNAME);
-        localStorage.setItem(USERNAME_KEY, typedUserName);
-        paintGreetings(typedUserName);
-        paintLogout();
-    } else {alert()}
+    const typedUserName = loginInput.value;
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    localStorage.setItem(USERNAME_KEY, typedUserName);
+    paintGreetings(typedUserName);
+    paintLogout();
 }
 
 
 function paintLogout(){
     logoutForm.classList.remove(HIDDEN_CLASSNAME);
 }
-
-function onLogoutSubmit(){
-    localStorage.removeItem(USERNAME_KEY, savedUserName);// localSotrage 값 초기화 하기
-    window.location.reload()
-}
-
-logoutForm.addEventListener("submit", onLogoutSubmit);
 
 function paintGreetings(typedUserName){
     greeting.innerText = `${typedUserName}, ${randomGreetingText}`; //"Hello " + userName;
@@ -50,6 +41,16 @@ if(savedUserName === null){
 } else {
     paintGreetings(savedUserName);
     paintLogout();
+
+
+function onLogoutSubmit(event){
+    event.preventDefault();
+    localStorage.removeItem(USERNAME_KEY, savedUserName);// localSotrage 값 초기화 하기
+    window.location.reload();
+}
+
+logoutForm.addEventListener("submit", onLogoutSubmit);
+
 }
 
 
