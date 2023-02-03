@@ -13,15 +13,18 @@ a, body, h1, h2, p, li, ul {
     padding: 0;
     margin: 0;
 }
-/* 
+
 body {
-    line-height: 1;
-} */
+    background-image: url(../img/me.png);
+    background-position: 1200px 570px;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-color:  #E4EAEC;
+}
 
 #wrap{
     margin: 0 auto;
     padding: 0;
-    background:  #E4EAEC;
     background-position: 840px -80px;
     background-repeat: no-repeat;
 }
@@ -79,54 +82,40 @@ body {
     display: inline-block;
 }
 
-/* login
+login
 #login-form-container{
     position: absolute;
     top: 0px;
-    left: 0px;
-    z-index: 2;
-    width: 1440px;
-    height: 1000px;
-    background-color: #FFFFFF;
-
-}
-
-#login-form-container div{
 }
 
 #login-form{
-    text-align: center;
-    width: inherit;
+    position: absolute;
+    top: 10px;
+    left: 930px
+
 }
 
 
-#login-form input[type=text]{
-    display: block;
-    margin: 0 auto;
-    margin-top: 30%;
-    background: none;
+#login-form input{
     border: none;
-    border-bottom: #000000 solid 1px;
-    font-family: 'Unbounded';
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    text-align: center;
-    color: #000000;
+    background: none;
+    font-size: 18px;
+    padding: 8px;
+}
+
+#login-form input[type=text]{
+    width: 260px;
+    border: #696c72 1px solid;
+    border-radius: 4px;
 }
 
 #login-form input[type=submit]{
-    margin: 0 auto;
-    margin-top: 21px;
-    display: block;
-    background: none;
-    border: none;
-    font-family: 'Unbounded';
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 26px;
-    text-align: center;
-} */
+    margin-left: 8px;
+    border: 1px solid 44494C;
+    border-radius: 4px;
+    background-color: #44494C;
+    color: #FFFFFF;
+}
 
 
 
@@ -137,7 +126,7 @@ body {
     width: 100px;
     height: 26px;
     top: 16px;
-    left: 1060px;
+    left: 1170px;
 }
 
 #logout-form input[type=submit]{
