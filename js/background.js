@@ -1,5 +1,5 @@
 const rightContainerElem = document.querySelector("#right-container");
-const images = ["01.png", "02.png", "03.PNG"];
+const images = ["01.png", "02.png", "03.png"];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
