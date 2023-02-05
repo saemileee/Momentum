@@ -1,9 +1,11 @@
-const images = ["01.jpg", "02.jpg", "03.jpg"];
+const rightContainerElem = document.querySelector("#right-container");
+const images = ["01.png", "02.png", "03.PNG"];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)]
+const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.createElement("img"); //html에 <img> 태그를 넣는다
+const bgImage = document.createElement("img");
+bgImage.src = `img/${chosenImage}`;
 
-bgImage.src = `img/${chosenImage}`; // html에 <img src = img/02.jpg>
+bgImage.classList.add("bg_img");
 
-document.body.appendChild(bgImage);
+rightContainerElem.appendChild(bgImage);

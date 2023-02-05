@@ -1,385 +1,378 @@
-
 /* reset */
 
-a, body, h1, h2, p, li, ul {
-    text-align: unset;
-    font-size: 0;
-    margin-block-start:0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: 0;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
+a,
+body,
+h1,
+h2,
+p,
+li,
+ul {
+  text-align: unset;
+  font-size: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 0;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-image: url(../img/me.png);
-    background-position: 1200px 570px;
-    background-size: 600px;
-    background-repeat: no-repeat;
-    background-color:  #E4EAEC;
+  background-image: url(../img/me.png);
+  background-position: 1200px 570px;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-color: #e4eaec;
 }
 
-#wrap{
-    margin: 0 auto;
-    padding: 0;
-    background-position: 840px -80px;
-    background-repeat: no-repeat;
+#wrap {
+  margin: 0 auto;
+  padding: 0;
+  background-position: 840px -80px;
+  background-repeat: no-repeat;
 }
 
 #content_container {
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    width: 1440px;
-    height: 1000px;
-    overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 1440px;
+  height: 1000px;
+  overflow: hidden;
 }
 
 .illust {
-    z-index: 0;
-    width: 35%;
-    position: absolute;
-    top: 570px;
-    left: 1000px;
+  z-index: 0;
+  width: 35%;
+  position: absolute;
+  top: 570px;
+  left: 1000px;
 }
 
 .heart {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    padding: 16px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 16px 0;
 }
 
 #header-container {
-    position: absolute;
-    width: 1440px;
-    height: 40px;
-    left: 95px;
-    padding-bottom: 24px;
-    border-bottom: solid 1px #000000;
+  position: absolute;
+  width: 1440px;
+  height: 40px;
+  left: 95px;
+  padding-bottom: 24px;
+  border-bottom: solid 1px #000000;
 }
 
 /* LOGO */
-.logo{
-    position: relative;
-    width: 171px;
-    height: 26px;
-    top: 14px;
-    font-family: 'Unbounded';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-    text-align: center;
-    color: #000000;
-    display: inline-block;
+.logo {
+  position: relative;
+  width: 171px;
+  height: 26px;
+  top: 14px;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  display: inline-block;
 }
 
-login
-#login-form-container{
-    position: absolute;
-    top: 0px;
+login #login-form-container {
+  position: absolute;
+  top: 0px;
 }
 
-#login-form{
-    position: absolute;
-    top: 10px;
-    left: 930px
-
+#login-form {
+  position: absolute;
+  top: 10px;
+  left: 930px;
 }
 
-
-#login-form input{
-    border: none;
-    background: none;
-    font-size: 18px;
-    padding: 8px;
+#login-form input {
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 8px;
 }
 
-#login-form input[type=text]{
-    width: 260px;
-    border: #696c72 1px solid;
-    border-radius: 4px;
+#login-form input[type="text"] {
+  width: 260px;
+  border: #696c72 1px solid;
+  border-radius: 4px;
 }
 
-#login-form input[type=submit]{
-    margin-left: 8px;
-    border: 1px solid 44494C;
-    border-radius: 4px;
-    background-color: #44494C;
-    color: #FFFFFF;
+#login-form input[type="submit"] {
+  margin-left: 8px;
+  border: 1px solid 44494C;
+  border-radius: 4px;
+  background-color: #44494c;
+  color: #ffffff;
 }
-
-
 
 /* logout > */
 
-#logout-form{
-    position: absolute;
-    width: 100px;
-    height: 26px;
-    top: 16px;
-    left: 1170px;
+#logout-form {
+  position: absolute;
+  width: 100px;
+  height: 26px;
+  top: 16px;
+  left: 1170px;
 }
 
-#logout-form input[type=submit]{
+#logout-form input[type="submit"] {
+  background: none;
+  border: none;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  /* identical to box height */
 
-    background: none;
-    border: none;
-    font-family: 'Unbounded';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 26px;
-    /* identical to box height */
+  text-align: right;
 
-    text-align: right;
-
-    color: #000000;
+  color: #000000;
 }
 
 #left-container {
-    position: absolute;
-    top: 100px;
-    left: 95px;
-    display: block;
-    color: #44494C;
+  position: absolute;
+  top: 100px;
+  left: 95px;
+  display: block;
+  color: #44494c;
 }
 
 /* good morning, */
 
-#welcome{
-text-align: center;
-font-family: 'Unbounded';
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
+#welcome {
+  text-align: center;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
 }
 
-#greeting{
-    text-align: center;
-    margin-top: 0px;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 350;
-    font-size: 32px;
+#greeting {
+  text-align: center;
+  margin-top: 0px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 32px;
 }
-
 
 /* 날짜 */
-#date{
-    text-align: center;
-    font-family: 'Prata';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
+#date {
+  text-align: center;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
 }
 
 /* 시계 */
 #clock {
-    text-align: center;
-    font-family: 'Prata';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    color: #44494C;
-    line-height: 66px;
+  text-align: center;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  color: #44494c;
+  line-height: 66px;
 }
 
 /* 날씨 */
 
-#weather{
-    width: 512px;
-    height: inherit;
-
+#weather {
+  width: 512px;
+  height: inherit;
 }
 #weather p {
-    display: block;
-    text-align: center;
-    position: relative;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    /* identical to box height */
-    color: #44494C;
+  display: block;
+  text-align: center;
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  /* identical to box height */
+  color: #44494c;
 }
 
-#weather div{
-    position: relative;
-    display: block;
-    margin-top: 16px;
-    width: 512px;
-    height: 174px;
-    background: url("../img/bg_container.png");
+#weather div {
+  position: relative;
+  display: block;
+  margin-top: 16px;
+  width: 512px;
+  height: 174px;
+  background: url("../img/bg_container.png");
 }
 
-#weather .icon_weather img{
-    position: absolute;
-    width: 62px;
-    height: 62px;
-    left: 42px;
-    top: 58px;
-    z-index: 0;
+#weather .icon_weather img {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  left: 42px;
+  top: 58px;
+  z-index: 0;
 }
 
 #weather .icon {
-    display: none;
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    left: 318px;
+  display: none;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 318px;
 }
 
-#weather .icon_humid{
-    top: 56px;    
-    background: url("../img/icon_humid.png");
+#weather .icon_humid {
+  top: 56px;
+  background: url("../img/icon_humid.png");
 }
 
-#weather .icon_windspeed{
-    top: 92px;    
-    background: url("../img/icon_windspeed.png");
+#weather .icon_windspeed {
+  top: 92px;
+  background: url("../img/icon_windspeed.png");
 }
 
-#weather .city{
-    position: absolute;
-    display: block;
-    height: 25px;
-    left: 111px;
-    top: 61px;
-    
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    /* identical to box height */
-    
-    
-    color: #44494D;
+#weather .city {
+  position: absolute;
+  display: block;
+  height: 25px;
+  left: 111px;
+  top: 61px;
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #44494d;
 }
 
-#weather .weather{
-    position: absolute;
-    height: 35px;
-    left: 111px;
-    top: 82px;
+#weather .weather {
+  position: absolute;
+  height: 35px;
+  left: 111px;
+  top: 82px;
 
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 35px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
 
-    color: #44494D;
+  color: #44494d;
 }
 
-#weather .humid{
-    position: absolute;
-width: 41px;
-height: 27px;
-left: 354px;
-top: 57px;
-font-family: 'Noto Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 27px;
-color: #44494D;
+#weather .humid {
+  position: absolute;
+  width: 41px;
+  height: 27px;
+  left: 354px;
+  top: 57px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #44494d;
 }
 
-#weather .wind{
-    position: absolute;
-left: 354px;
-top: 93px;
+#weather .wind {
+  position: absolute;
+  left: 354px;
+  top: 93px;
 
-font-family: 'Noto Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 27px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
 
-color: #44494D;
+  color: #44494d;
 }
 
-#weather .error{
-position: absolute;
-width: 512px;
-top: 74px;
-text-align: center;
-font-family: 'Noto Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 27px;
+#weather .error {
+  position: absolute;
+  width: 512px;
+  top: 74px;
+  text-align: center;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
 
-color: #44494D;
+  color: #44494d;
 }
-
 
 /* 명언 */
 #quote {
-    width: 512px;
-    height: inherit;
-
+  width: 512px;
+  height: inherit;
 }
 #quote p {
-    position:relative;
-    display: block;
-    text-align: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 21px;
-    color: #44494C;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  color: #44494c;
 }
 
 #quote .container {
-    position:relative;
-    display: block;
-    margin-top: 16px;
-    width: 512px;
-    height: 174px;
-    background: url("../img/bg_container.png");
+  position: relative;
+  display: block;
+  margin-top: 16px;
+  width: 512px;
+  height: 174px;
+  background: url("../img/bg_container.png");
 }
 
 #quote .quote_container {
-    text-align: center;
-    position: absolute;
-    width: 512px;
-    height: 96px;
-    top:65px;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #44494D;
+  text-align: center;
+  position: absolute;
+  width: 512px;
+  height: 96px;
+  top: 65px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #44494d;
 }
 
-#quote .quote{
-    display: inline;    
+#quote .quote {
+  display: inline;
 }
 
-#quote .author{
-    display: inline;
-    height: 22px;
+#quote .author {
+  display: inline;
+  height: 22px;
 }
 
-
-#right-container{
-    display: block;
-    position: absolute;
-    left: 750px;
-    top: 80px
+#right-container {
+  display: block;
+  position: absolute;
+  left: 750px;
+  top: 80px;
 }
 
 /* 투두리스트 */
@@ -391,147 +384,156 @@ color: #44494D;
     left: 796.88px;
     top: 105px;
 } */
-#todo_title span:first-child{
-    display: block;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 33px;
-    color: #000000;
+#todo_title span:first-child {
+  display: block;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
 }
-#todo_title span:last-child{
-    display: block;
-    font-family: 'Unbounded';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 62px;
-    color: #000000;
+#todo_title span:last-child {
+  display: block;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+  color: #000000;
 }
 
 #todo_container {
-    position: relative;
-    margin-top: 14px;
-    display: block;
-    padding: 26px 23px;
-    width: 480px;
-    height: 475px;
-    background: #000000;
+  position: relative;
+  margin-top: 14px;
+  display: block;
+  padding: 26px 23px;
+  width: 480px;
+  height: 475px;
+  background: #000000;
 }
 
-#todo_container .todo_group{
-    display: block;
-    width: 434px;
-    height: 423px;
+#todo_container .todo_group {
+  display: block;
+  width: 434px;
+  height: 423px;
 }
 
 #todo-form {
-    width: inherit;
-    height: 35px;
+  width: inherit;
+  height: 35px;
 }
 
-#todo-form input[type=text]{
-    width: 85%;
-    height: 35px;
-    background: none;
-    border-style: solid;
-    border-width: 1px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-color: #FFFFFF;
-    border-image: none;
-    color: #E4EAEC;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
+#todo-form input[type="text"] {
+  width: 85%;
+  height: 35px;
+  background: none;
+  border-style: solid;
+  border-width: 1px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #ffffff;
+  border-image: none;
+  color: #e4eaec;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
 }
 
-
-#todo-form input[type=submit]{
-    display: inline-block;
-    width: 50px;
-    margin-left: 14px;
-    border: solid 1px;
-    border-radius: 2px;
-    background: none;
-    color: #E4EAEC;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
+#todo-form input[type="submit"] {
+  display: inline-block;
+  width: 50px;
+  margin-left: 14px;
+  border: solid 1px;
+  border-radius: 2px;
+  background: none;
+  color: #e4eaec;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
 }
 
-#todo-list{
-    display: block;
-    margin: 8px 0;
-    width: 490px;
-    height: 90%;
-    overflow-y:scroll;
+#todo-list {
+  display: block;
+  margin: 8px 0;
+  width: 490px;
+  height: 90%;
+  overflow-y: scroll;
 }
 
 #todo-list::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 #todo-list::-webkit-scrollbar-thumb {
-    background-color: #2f3542;
-    border-radius: 8px;
-    background-clip: padding-box;
-    border: 2px solid transparent;
+  background-color: #2f3542;
+  border-radius: 8px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
 }
 #todo-list::-webkit-scrollbar-track {
-    display: none;
+  display: none;
 }
 
-#todo-list li{
-    width: 95%;
-    padding: 8px 4px ;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 300;
-    color: #FFFFFF;
-    border-bottom: #E4EAEC dotted 0.5px;
+#todo-list li {
+  width: 95%;
+  padding: 8px 4px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffff;
+  border-bottom: #e4eaec dotted 0.5px;
 }
 
-#todo-list li span{
-    display: inline-block;
-    width: 84%;
-    line-height: 29px;
-    font-size: 16px;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    word-break: break-all;
+#todo-list li span {
+  display: inline-block;
+  width: 84%;
+  line-height: 29px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
-#todo-list li button:first-child{
-    font-family: Helvetica, sans-serif;
-    display: inline-block;
-    width: 24px;
-    margin: 0 12px 0 0;
-    padding: 2px 0 2px 0 ;
-    background: none;
-    color: #FFFFFF;
-    border: none;
-    text-align: center;
-    font-size: 22px;
-    position: relative;
-    float: left;
+#todo-list li button:first-child {
+  font-family: Helvetica, sans-serif;
+  display: inline-block;
+  width: 24px;
+  margin: 0 12px 0 0;
+  padding: 2px 0 2px 0;
+  background: none;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  font-size: 22px;
+  position: relative;
+  float: left;
 }
 
-#todo-list li button:last-child{
-    display: inline-block;
-    width: 24px;
-    margin-left: 10px;
-    padding: 10px;
-    background: none;
-    color: #FFFFFF;
-    border: none;
-    float: right;
+#todo-list li button:last-child {
+  display: inline-block;
+  width: 24px;
+  margin-left: 10px;
+  padding: 10px;
+  background: none;
+  color: #ffffff;
+  border: none;
+  float: right;
 }
 
 .hidden {
-    display: none;
+  display: none;
+}
+
+/* 랜덤 이미지 */
+.bg_img {
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 500px;
+  left: 200px;
+  z-index: -1;
 }
